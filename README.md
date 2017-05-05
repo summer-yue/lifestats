@@ -19,5 +19,4 @@ Go to the project directory. Make sure node.js is installed, make sure mongoDB i
 
 ##User and Technical Manual
 Please see Handoff_LifeStats.pdf
-
-
+```
