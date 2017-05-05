@@ -12,11 +12,12 @@ LifeStats: a habit tracker for the person on the move.
 
 ## How to run
 
-Go to the project directory. Make sure node.js is installed, make sure mongoDB is running
+Go to the project directory. Make sure node.js is installed, make sure mongoDB is running, then run
 
 ```
 > node server.js
-
-##User and Technical Manual
-Please see Handoff_LifeStats.pdf
 ```
+Then navigate to ```localhost:8080```.
+
+## User and Technical Manual
+Please see Handoff_LifeStats.pdf
