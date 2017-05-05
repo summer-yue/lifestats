@@ -1,0 +1,120 @@
+<!-- specific html for our pomodoro tab -->
+
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- load angular -->
+    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/pomodoroController.js"></script>
+    <script src="js/notifController.js"></script>
+    <!-- For the circular display -->
+    <link href="//cdn.muicss.com/mui-0.5.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es6-promise/3.2.1/es6-promise.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="//cdn.muicss.com/mui-0.5.1/js/mui.min.js"></script>
+    <script src="//goinggas.com/cdn/dashtimer/v0.1/dashtimer.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pomodoro.css">
+</head>
+
+<body class="container">
+    <!-- Sidebar Navigation -->
+    <div ng-include="'navigation.html'"></div>
+    <div class="pomodoroPage">
+        <div ng-controller="pomodoroController" class="pomodoroController">
+            <div notif></div>
+            <div class="pomodoro todoContainer">
+                <div class="modal-content" ng-show="hasTodos && showModal">
+                    <h1 class="row pomodoroPrompt">Select a to-do item:</h1>
+                    <div ng-repeat="task in taskList.data">
+                        <label>{{task.text}}
+                            <input type="radio" ng-model="selectedTask.name" name="text" ng-value="task" ng-change="changedValue(selectedTask.name)" required />
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-default pomodoro-completeTask" ng-disabled="!selectedTask.name" ng-click="closeModal()">Ok</button>
+                </div>
+                <div class="modal-content" ng-show="!hasTodos && showModal">
+                    <h1 class="row pomodoroPrompt">No more to-dos!</h1>
+                    <button class="btn btn-success" ng-click="redirect()">Add more</button>
+                </div>
+            </div>
+            <div class="pomodoroHeader">
+                <span>Pomodoro</span>
+            </div>
+            <div class="pomodoroContainer">
+                <div class="timerContainer">
+                    <h1 class="row pomodoroPrompt time"> Work {{min}}:{{sec}}   Break {{minBreak}}:{{secBreak}}</h1>
+                    <div class="inputTimeContainer">
+                        <div class="inputTime">
+                            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-model="min" ng-change="changedMin(min)" class="row" ng-disabled="disableEdit"></input>
+                        </div>
+                        <div class="inputTime">
+                            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-model="sec" ng-change="changedSec(sec)" ng-disabled="disableEdit" class="row"></input>
+                        </div>
+                        <div class="inputTime">
+                            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-model="minBreak" ng-change="changedMin(minBreak)" ng-disabled="disableEdit" class="row"></input>
+                        </div>
+                        <div class="inputTime">
+                            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-model="secBreak" ng-change="changedSec(secBreak)" ng-disabled="disableEdit" class="row"></input>
+                        </div>
+                    </div>
+                    <div class="row timerButtonContainer">
+                        <button type="button" class="btn btn-default pomodoro-start" ng-disabled="!selectedTask.name" data-ng-click="start()">Start</button>
+                        <button type="button" class="btn btn-default pomodoro-pause" ng-disabled="!selectedTask.name" data-ng-click="stop()">Pause</button>
+                        <button type="button" class="btn btn-default pomodoro-complete" ng-disabled="!selectedTask.name" data-ng-click="recordPopup(); complete()">Complete</button>
+                        <button type="button" class="btn btn-default pomodoro-reset" ng-disabled="!selectedTask.name" data-ng-click="reset()">Reset</button>
+                    </div>
+                </div>
+                <div class="pomodoro-popup" ng-show="showBreakPopup">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Break ended!</h3>
+                        </div>
+                        <div class="modal-body">
+                            <span ng-click="closeBreakPopup()" class="close">&times;</span>
+                            <p>Start a new Pomorodo Session</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pomodoro-popup" ng-show="showPopup">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Good job!</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Have you completed the to-do item?</p>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" ng-click="recordPopup();reset();">Need more time!</button>
+                                <button type="submit" class="btn btn-success yes" ng-click="recordPopup();complete()">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body pomodoro-popup" ng-show="showCompletePopup">
+                    <p class="rankingPrompt"> Please rank your productivity from 1 to 5:
+                    </p>
+                    <span ng-repeat="rating in ratingsProd" class="ratingsProd">
+                            <div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="setProductivity(rating)"></div>
+                        </span>
+                    <p class="rankingPrompt"> How happy did you feel:
+                    </p>
+                    <span ng-repeat="rating in ratingsHappy" class="ratingsHappy">
+                            <div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="setHappiness(rating)"></div>
+                            </span>
+                    <p class="rankingPrompt"> How stressed did you feel:
+                    </p>
+                    <span ng-repeat="rating in ratingsStress" class="ratingsStress">
+                            <div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="setStress(rating)"></div>
+                            </span>
+                    <button type="submit" class="btn btn-success" ng-click="recordCompletePopup()">Submit</button>
+                </div>
+            </div>
+            <div id="timer1"></div>
+        </div>
+</body>
+
+</html>

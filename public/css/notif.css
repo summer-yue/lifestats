@@ -1,0 +1,61 @@
+/* CSS for public/notif.html */
+
+.notifContainer {
+	margin-top: 20px;
+	display: flex;
+    justify-content: center;
+}
+
+.notif.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	z-index: 2;
+    position: fixed;
+}
+
+.rating {
+        color: #a9a9a9;
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-shadow: .03em .03em rgba(0,0,0,0.50);
+    }
+    ul.rating {
+        display: inline-block;
+    }
+    .rating li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 1px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .ratingsProd .filled {
+        color: #FFD21D;
+    }
+
+    .ratingsHappy .filled {
+        color: #FE556A;
+    }
+
+    .ratingsStress .filled {
+        color: #3691FC;
+    }
+}
+
+button.btn.notif-submit:hover {
+	color: #E7E7E7;
+}
+
+.notif-ratingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

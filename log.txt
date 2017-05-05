@@ -1,0 +1,1360 @@
+commit 55ce456881d4708927eb9d7bef932ba892427a9f
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Apr 19 16:30:15 2017 -0400
+
+    fixed errors and made stats more robust
+
+commit 65c6f79888b2dc620df9290bb8e4c934993745e8
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Apr 19 11:53:33 2017 -0400
+
+    moved app name in login box css
+
+commit be642eca5cf6b2e8fa52cc2e5b6ba0319ec8c3c8
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Apr 19 11:44:31 2017 -0400
+
+    fix login css spacing
+
+commit 77afcd05bee800bac6b2b717920795718f97f4ad
+Author: ilakumar <ilakkumar@vagvlan506.0690.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 18 16:07:18 2017 -0400
+
+    css style star ratings pomodoro
+
+commit c3e9d701df275369f263c68393529bdc3854b0df
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 18 10:37:33 2017 -0400
+
+    CSS style notification and pomodoro pop ups
+
+commit 61088970c484b8e723746649a0e19a904b00af92
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Tue Apr 18 02:12:06 2017 -0400
+
+    Stars in notif
+
+commit 9635f003ffa484c7da4c5a7085fbbf84c8487087
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Tue Apr 18 01:03:53 2017 -0400
+
+    Hiding notif for things not tracked
+
+commit fb9370b1af3de4ae1f2bb8de665bc4c7cb7b6050
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Mon Apr 17 22:17:39 2017 -0400
+
+    css style nav label hover color to be off-black when on the page
+
+commit a3daf4e71453a1c84e747b0711c3e31ade0b7ebd
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Mon Apr 17 22:13:30 2017 -0400
+
+    fixed todo page height
+
+commit bf1333d437b5f51c2494f749a0fb83368719c66a
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Mon Apr 17 22:08:57 2017 -0400
+
+    moved notification box html for homepage and stats page
+
+commit b78973d590b4ba2e345004f1561792ae22836974
+Merge: 9ec7d29c 3455b489
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Mon Apr 17 22:04:46 2017 -0400
+
+    timer 3 sec
+
+commit 9ec7d29cde1e74461629fb00b358e87b414d7d43
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Mon Apr 17 22:02:02 2017 -0400
+
+    timer 3 second
+
+commit 3455b4895a10bf8a8bb02eb5b9fd8729391a82db
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Mon Apr 17 21:52:49 2017 -0400
+
+    styled all pop ups to be position fixed (and correctly spaced)
+
+commit 6897c9070ad1ea9378217fc75387a6de14c72909
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Mon Apr 17 21:25:03 2017 -0400
+
+    Bug fix: Todo Tags
+
+commit 9b4f6f9aa0528711342efb82342fcb84bc26eed8
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Mon Apr 17 21:06:48 2017 -0400
+
+    style todo label of navigation bar
+
+commit 135840a65a1c378973e72396f88297fe79c46564
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Mon Apr 17 20:31:23 2017 -0400
+
+    fix todo box margin
+
+commit 2a9eb6c9f5634eee7fcf0bf7577298404e66cb81
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Mon Apr 17 20:27:40 2017 -0400
+
+    center pomodoro to do select box
+
+commit c6f3f819b795004faeb789f7291dfc8ee31e3c5f
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Mon Apr 17 17:45:39 2017 -0400
+
+    Removing input options for tags
+
+commit eb1db8a8b60729dd8e81f379f3c4d1c8ad5a9563
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Mon Apr 17 10:00:02 2017 -0400
+
+    fixed stats
+
+commit 00707e6dc7ea8699feec69d9a2daeed2b0258cb7
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Sun Apr 16 19:06:36 2017 -0400
+
+    css style dog emoji
+
+commit 9eb8e2fb0bb54709d8d4496de60148a6ca99d3e0
+Author: ilakumar <ilakkumar@levyvlan538.0281.apn.wlan.wharton.upenn.edu>
+Date:   Sun Apr 16 18:09:10 2017 -0400
+
+    fix css for timeframe box in stat pages after merge
+
+commit 6ff28329ad51632eabd9a0f2220f0f66863489fe
+Merge: 146cc2f1 877820b5
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Apr 16 18:02:08 2017 -0400
+
+    fixed merged conflict with ila
+
+commit 146cc2f19d87274bb4ac50743261d2169dce5599
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Apr 16 18:01:13 2017 -0400
+
+    fixed timer pause and refactored pomodoro stars css
+
+commit 877820b5d66103cee1bfe7df74c93f21c641051a
+Merge: 62eedcec 563dbffa
+Author: ilakumar <ilakkumar@levyvlan538.0281.apn.wlan.wharton.upenn.edu>
+Date:   Sun Apr 16 17:57:00 2017 -0400
+
+    merge conflicts
+
+commit 62eedcec09446f5507b386a10fbb7347eb5a0d7f
+Author: ilakumar <ilakkumar@levyvlan538.0281.apn.wlan.wharton.upenn.edu>
+Date:   Sun Apr 16 17:56:32 2017 -0400
+
+    css style pomodoro pop up and stats time frame box
+
+commit 563dbffa86f2407c3c043c5365814a4333544355
+Merge: 634d7495 411485d9
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 16 17:52:49 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit 634d749545dcab2e54b35f81c3903d7c06edc54b
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 16 17:52:40 2017 -0400
+
+    pomo popup star rating
+
+commit 411485d94f6e286d1363235951930f359bdceaeb
+Merge: 57f0435e 3e16e080
+Author: ilakumar <ilakkumar@levyvlan538.0281.apn.wlan.wharton.upenn.edu>
+Date:   Sun Apr 16 17:36:20 2017 -0400
+
+    merge conflicts
+
+commit 57f0435e1f06ab0397a4bf659299e32ea2f26235
+Author: ilakumar <ilakkumar@levyvlan538.0281.apn.wlan.wharton.upenn.edu>
+Date:   Sun Apr 16 17:35:05 2017 -0400
+
+    css style for todo task ratings
+
+commit 3e16e08080df4ccb330df3459edc5f519526a73a
+Merge: 8a084d25 b4dab4ed
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 16 17:10:35 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit 8a084d25dff15613eb06b9392a286048c9a5092f
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 16 17:10:22 2017 -0400
+
+    directive moved
+
+commit b4dab4ed20c2772d3f50262f19a27a65fface03e
+Merge: 05e0aac4 1d2dcea2
+Author: ilakumar <ilakkumar@levyvlan538.0281.apn.wlan.wharton.upenn.edu>
+Date:   Sun Apr 16 17:06:27 2017 -0400
+
+    css add tag button
+
+commit 05e0aac49681e7103a41687540be76b8901f6180
+Author: ilakumar <ilakkumar@levyvlan538.0281.apn.wlan.wharton.upenn.edu>
+Date:   Sun Apr 16 17:03:31 2017 -0400
+
+    css style add tags button on todo page
+
+commit 1d2dcea2a64bcad83116afaa31ff53c72a4897b6
+Merge: 6e508db3 634522ad
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 16 17:02:38 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit 6e508db3b6d4e88fe6538cac915040b817fc9a0a
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 16 17:02:25 2017 -0400
+
+    timer added
+
+commit 634522adea6143f18a38a03921bd390180e0b801
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Apr 16 16:42:35 2017 -0400
+
+    fixed NaN for stats
+
+commit cd25a4026b9ddd1568537ac602b381b2956ce226
+Merge: 8b0852d5 a872133b
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Sun Apr 16 14:35:13 2017 -0400
+
+    css style the nav bar
+
+commit a872133b82d263e5cd6bfcee6693105f604c9bda
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Sun Apr 16 14:25:09 2017 -0400
+
+    Validation for number of hours it took to complete todo in order to accomodate stats
+
+commit 6366462361e78aac39b520eb90c2b86d803d6fec
+Merge: dafd1c4b 3504d1f8
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Apr 16 09:34:33 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit dafd1c4b37d7b68cdb0ef7baf924fde92efcfe4f
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Apr 16 09:34:31 2017 -0400
+
+    fixed some stats issues
+
+commit 3504d1f8e1eb089966d80f37e82b0face555ecb1
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Fri Apr 14 11:18:42 2017 -0400
+
+    console delete
+
+commit a0d2b913a5a977d1f04f5f908038066c6ad122e3
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Fri Apr 14 11:18:02 2017 -0400
+
+    pomodoro popup
+
+commit 8b0852d5e805918ccf9efdfcc8d05404b9ce2bc3
+Author: ilakumar <ilakkumar@hnt_ve600_0278.wireless-pennnet.upenn.edu>
+Date:   Fri Apr 14 10:44:12 2017 -0400
+
+    CSS shortcut styling of the navigation bar
+
+commit e41cdc539e5e25c761e1e462758325c849cb0259
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Apr 14 01:11:49 2017 -0400
+
+    fixed bug with productivity
+
+commit a9edbb5e113efcf78872494f551d2ee0f151225c
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Apr 14 00:49:47 2017 -0400
+
+    changed hardcodes
+
+commit e4c2e33eb17070cc2dfc393fd4125e2dff02a8df
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Apr 14 00:39:40 2017 -0400
+
+    Getting rid of the validation popup and added conditions for Todo input validation
+
+commit 351ec5bccf8b9d24e5af0d11a0b1ac5245f33898
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Apr 14 00:28:00 2017 -0400
+
+    Lawrence: Using one ng-app
+
+commit 03691ff0946481944542bf05d7103f2ba94b9fbf
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Apr 14 00:20:48 2017 -0400
+
+    changed away hardcode
+
+commit 416f3a1ea37b5a8b04bfbfdcef7b608e7d0ecdaf
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Apr 14 00:17:56 2017 -0400
+
+    From Lawrence: making smiley faces images
+
+commit ff66e76e08ac0f514262687c98be536e6b1969dc
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Apr 13 21:31:18 2017 -0400
+
+    todo happiness and stress changed to stars
+
+commit 71474a0bc6c6294f0e60393bdbd84e0e2807aa4f
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Apr 13 17:01:14 2017 -0400
+
+    Add tags button for todo items with no tags originally
+
+commit 166b438f2ddc3c212bcd9fcae8e275c94f548088
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Apr 12 07:44:50 2017 -0400
+
+    fixed navigation button css and pomodoro button css
+
+commit 83b97841982d34e701f3e59eb63bba1b210f5917
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Apr 12 07:33:46 2017 -0400
+
+    added id to nav buttons
+
+commit 36f252c982531846c2b38d5c75c5328653b22222
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Apr 12 07:25:03 2017 -0400
+
+    refactored CSS so that navigation css is in seperate css file
+
+commit d5e9a21017e1d4ea769c2aa2787c78c6ac484e2c
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 11 13:21:52 2017 -0400
+
+    pomodoro show time inside timer
+
+commit b57299ca19285cd6b2c7728c03937e5af52e2839
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 11 12:53:42 2017 -0400
+
+    css style pomodoro buttons
+
+commit dcf0697eb56e7625fab2f5a3eabebfef0fea0b2d
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 11 12:07:40 2017 -0400
+
+    css style notifications
+
+commit dfd574551eaa1ab534dda52b3c0f4aac8763072d
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Mon Apr 10 21:53:20 2017 -0400
+
+    fixed 'advance' button
+
+commit ca0779e554a85b3a5fa6e17a5bfb7f677eb03edc
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Apr 7 08:20:25 2017 -0400
+
+    added back timer visualization and updated log.txt
+
+commit 4c5f2fcc33e6b9c197a4acc5a008512be98bcc9b
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Apr 7 01:32:38 2017 -0400
+
+    Recording happiness and stress for each completed Todo and simplify compact todo
+
+commit 92df367e81423176cfb0786f7ad5184f684e60bf
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Apr 7 01:13:17 2017 -0400
+
+    bug fix for http request with new Angular version on Todo and Settings, also reorganized API calls by outputting routes module
+
+commit 1110f4804c3357439fd09d0f58a54a80cd4ba20d
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Apr 6 22:10:21 2017 -0400
+
+    10 sec notif for demo
+
+commit a9ec0e48315284dd75f67ea1d6f8bc768efb00f6
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Apr 6 21:48:22 2017 -0400
+
+    fixed app undefined + timer added to todo
+
+commit 57fcebf8a3d9314f0acaacf0a00783f7ddcb8bbf
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Apr 6 16:53:40 2017 -0400
+
+    resolved errors
+
+commit 1b63f2b237fde973c7b329a4fa7bd6320ace750e
+Merge: c106ec9e 7b623c22
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Apr 6 15:20:08 2017 -0400
+
+    Merge branch 'notif'
+
+commit 7b623c22f35c6a76ac9853540f87553bf3ad2fd9
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Apr 6 14:27:40 2017 -0400
+
+    version testing
+
+commit d4358350fe3970ebf80532eeac21c9d7ea0644a0
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Apr 6 13:55:29 2017 -0400
+
+    timer working on pomodoro
+
+commit bb2ba07df8b2f50b9657bffea508f71a266f5c1c
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Apr 6 12:56:48 2017 -0400
+
+    isolate notif
+
+commit c106ec9e92bf44330039ddb6da7cffbd555a674d
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Wed Apr 5 23:54:57 2017 -0400
+
+    Resolve navigation not found problem
+
+commit 02d5513a08c00e20cbe5908f04c703df92a5ed81
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Wed Apr 5 23:44:11 2017 -0400
+
+    Modifying stress and happiness adding's API calls to accomodate for new version of angular
+
+commit d51870ab1e04094d28f8ff026924d7bd4527f1bd
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Wed Apr 5 22:10:50 2017 -0400
+
+    more
+
+commit 3235f1ba2c109bd9c9ffa068a747ac7dc0c50df2
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Wed Apr 5 22:10:11 2017 -0400
+
+    popup 3 sec testing
+
+commit ec20b7203657f6e062ef97efc6bf6aa5b4e6309f
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Apr 5 16:18:02 2017 -0400
+
+    changes to pomodoro css
+
+commit 16c9f9126347ddfe97adac064e182e99b1698b8c
+Merge: 2affdaba 3bebb816
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Apr 5 15:39:05 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit 2affdaba6bbf9b4dabfe6fac5b7251ef6071f557
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Apr 5 15:38:56 2017 -0400
+
+    css styling for pomodoro tab
+
+commit 3bebb8166140a74ccbee9e50c7a45a9a0d8adcd1
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Apr 5 09:59:01 2017 -0400
+
+    added description and happy/sad/neutral face
+
+commit 4739cb2e0d3d2c53274abc281a1804ffd69b407c
+Merge: 4e4cc4b6 9d6b7bbd
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Apr 5 09:27:26 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit 9d6b7bbd733aa6864324160e1aaaf6fe487c593e
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 23:01:30 2017 -0400
+
+    one more css todo change
+
+commit 0c9889a724c5270ef014eb03cfbf57798bb3a455
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 23:00:16 2017 -0400
+
+    todo css changes
+
+commit acdcc5c2b14682c176f06c68933fa5ff15a88aa3
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 22:47:53 2017 -0400
+
+    css for stats
+
+commit 4e4cc4b6a539a9cc5724ec3ac79460c6e57dd0da
+Merge: 3d7d426c 77ee8c35
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 22:37:25 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit 3d7d426c0da25a6de677302ed8ba4ef13af2db9a
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 22:37:23 2017 -0400
+
+    commit for merge
+
+commit 77ee8c3593135daf14af1744facf47cf2797b5aa
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 22:31:45 2017 -0400
+
+    css for productivity tab
+
+commit f7a535490cd22cbce1c5d621a947939d14c457a3
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 22:03:30 2017 -0400
+
+    fixed productivity tab
+
+commit e6c0920ec98ab8a33b6f71212da7efbb47eec6ae
+Merge: b6342d31 274db26a
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 21:50:07 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit b6342d311feb48bad3500fc56b7bfef63f6f53e7
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 21:50:00 2017 -0400
+
+    styling for stats pages
+
+commit 274db26aff69eb5718f1c86fb89285aed53b585d
+Merge: f10f7a84 1aa848bc
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 21:48:05 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit f10f7a84b15a4529de167bf0465017e7340a0340
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 21:47:59 2017 -0400
+
+    fixed hompage bug
+
+commit 1aa848bc059749a36e8768ca906dc7aeaec6e972
+Merge: 44a62851 5f987e46
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 21:30:46 2017 -0400
+
+    changes to css
+
+commit 44a628516b70a45505abc68d0241ff94f038b92e
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 21:28:03 2017 -0400
+
+    style stress page
+
+commit 5f987e4691b96ce2304a0e62a30552dcfe53db8f
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 19:01:27 2017 -0400
+
+    added productivity pie chart
+
+commit 2fb657a0cd93159485c7925825036f26bd32ce0b
+Author: ilakumar <ilakkumar@modvvlan502.00868.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 18:53:22 2017 -0400
+
+    css button changes
+
+commit bd831bc44f4c74630106e2670c3d740b13055431
+Author: ilakumar <ilakkumar@modvvlan502.00868.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 18:28:47 2017 -0400
+
+    css style button select
+
+commit 44f4da32e0da09352483b83005aec2e9a06f1fea
+Author: ilakumar <ilakkumar@modvvlan502.00868.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 18:25:25 2017 -0400
+
+    minor css star change
+
+commit b4901b11e0db77906149d0ba9aa60f63cc1e00d0
+Author: ilakumar <ilakkumar@modvvlan502.00868.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 18:20:58 2017 -0400
+
+    css for todo stars
+
+commit f63f2fd083a3700898d880c7bd649c0dfe742b07
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 17:48:14 2017 -0400
+
+    re-factored for todo
+
+commit 82a735266b5e1e62653420c9f5e89f68973c3006
+Merge: a0658905 4a3e9b06
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 17:31:37 2017 -0400
+
+    merged
+
+commit a0658905feb1b1102a397f16cd61fe27a13e8d52
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 17:29:55 2017 -0400
+
+    stars working
+
+commit 4a3e9b065995b8d2f41f46fc6b45061610d6697b
+Author: ilakumar <ilakkumar@vagvlan567.01993.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 15:07:23 2017 -0400
+
+    css style todo labels
+
+commit e97f63fb3c3a74d725681a7df0aadf179e732921
+Author: ilakumar <ilakkumar@vagvlan567.01993.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 14:43:46 2017 -0400
+
+    changed font of stats
+
+commit d20003b3f3b396212c68b528c6ce0f51dd851e9c
+Merge: 8a795db3 ce5d97d4
+Author: ilakumar <ilakkumar@vagvlan567.01993.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 14:41:43 2017 -0400
+
+    css change to stat
+
+commit 8a795db3e95cba88f28b878cfc094de5f9770237
+Author: ilakumar <ilakkumar@vagvlan567.01993.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 14:38:49 2017 -0400
+
+    css stats legend
+
+commit ce5d97d473a2c5d6cefdd2e0138b383f957f47d9
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 14:37:19 2017 -0400
+
+    fixed stats-html pages
+
+commit 74a4440876048023ac925bb99cac6f65bafbcfa6
+Merge: d57b960d 61b8f827
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 14:35:58 2017 -0400
+
+    committing after merge
+
+commit d57b960d91179b3fa4b786db6b0ee0a9f89f9558
+Author: ilakumar <ilakkumar@huntsman-ve565-2062.apn.wlan.upenn.edu>
+Date:   Tue Apr 4 14:17:20 2017 -0400
+
+    fix nav bar css
+
+commit cd670a8bcfdd1689cf4b5a74c6a7726874105b81
+Author: ilakumar <ilakkumar@huntsman-ve565-2062.apn.wlan.upenn.edu>
+Date:   Tue Apr 4 14:05:00 2017 -0400
+
+    minor css changes to homepage, todo and stats pages
+
+commit e453d317c76d60c23e881cf4051ab87d93c08547
+Author: ilakumar <ilakkumar@hntvlan538.1981.apn.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 13:25:22 2017 -0400
+
+    css for homepage
+
+commit 3bd7ba814ae0e809ca4b4e9eb1c3b07bfcbaa903
+Author: ilakumar <ilakkumar@hntvlan538.1981.apn.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 12:48:37 2017 -0400
+
+    minor changes to css for nav bar and stats
+
+commit 11ae9f174354de79dcb18215b54760f04f36378d
+Author: ilakumar <ilakkumar@hntvlan538.1981.apn.wlan.wireless-pennnet.upenn.edu>
+Date:   Tue Apr 4 11:41:40 2017 -0400
+
+    more css changes to homepage and stats page
+
+commit 61b8f8271ebc7f19e2fb9df194141ce41ac83a08
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Apr 4 11:36:32 2017 -0400
+
+    push
+
+commit fee1857f4494782f0c9bf6074825de0727e77a29
+Merge: 005503ae 5b760ed2
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 10:54:23 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit 005503ae3003abfcd0fd08389c8835db7ce51dcc
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Tue Apr 4 10:46:04 2017 -0400
+
+    css for stat page
+
+commit 5b760ed2e6f83b73fff36832cd0c60fa25d912c4
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Mon Apr 3 21:31:16 2017 -0400
+
+    changed 'edit' to 'save changes'
+
+commit 68ff129edf63f54a6a462acba60210355271bd25
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 2 15:44:36 2017 -0400
+
+    notif popup shown
+
+commit 2c1615913a1d456a4967b895bd8389cb0944e3c3
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Sun Apr 2 15:35:20 2017 -0400
+
+    Adding callback for Pomodoro
+
+commit 21ab2e6807d89d2515178926401ba0bf8445871b
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 2 15:24:11 2017 -0400
+
+    timer stopped
+
+commit e575cd448d7f26105754069240b9aff96e3fc676
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Apr 2 15:11:55 2017 -0400
+
+    timer service
+
+commit 0ceb60e93e9e0cfd6f5241ac0a825eaff909b013
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Fri Mar 31 23:25:18 2017 -0400
+
+    global timer service working on pomo
+
+commit 98053a3866734e3621ae5536a10eaa204c8e0bcf
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Fri Mar 31 23:03:25 2017 -0400
+
+    added timer service
+
+commit cb64403a1430c3c9b3b10af1826cac5da9372500
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Fri Mar 31 19:41:51 2017 -0700
+
+    Update README.md
+    
+    fixed my name!
+
+commit 5f706c70185410611e3166e2754acd55159c5cda
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Fri Mar 31 19:40:54 2017 -0700
+
+    finish tasks for iteration 3
+
+commit be11721ab9d3edadcc1b0b75cc9f2bf5759d9b33
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Mar 31 20:27:12 2017 -0400
+
+    nav bar on home page
+
+commit cd6b39efa34e51a79ee2f34665b0de53447d3f79
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Mar 31 19:52:08 2017 -0400
+
+    Fixing navigation bar and removing navController
+
+commit 4cf9bac4a6adb4ee52d223dd140049c851e775ff
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Mar 26 04:44:14 2017 -0400
+
+    added some hardcoded values into database
+
+commit 6ffada44c70e89ee5c8be7f038fd5500fa7aebff
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Mar 26 04:20:46 2017 -0400
+
+    added stats page to homepage
+
+commit 40a70ab525cf307b2904e779e85f9d3f391ee5d0
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sat Mar 25 10:46:57 2017 -0400
+
+    fixed all controller issues, and inserts some more graphs
+
+commit 0d5a0856361a8f7b3bb3f1b4c9cbd67d72ea3fd7
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Mar 24 20:10:38 2017 -0400
+
+    refactored to single app --> app.js
+
+commit 1e576e6c2a78b2ce689cc1a4c7f63b9f1441352f
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Mar 24 19:42:47 2017 -0400
+
+    minor bug fix in login page
+
+commit e9deedddbf37b9e6b095ca8e2066b9f9b2ccecb6
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Mar 24 19:34:22 2017 -0400
+
+    updated commit log
+
+commit 9d760003cf362ea0653c6ea5ffaeb307a5deb933
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Mar 24 19:20:21 2017 -0400
+
+    updated joy's pomodoro functionalities
+
+commit 69ed377df6bf5b085a28cbfb8b83156a9670a53d
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Mar 24 09:13:27 2017 -0400
+
+    centered graph, and added empty task array warning
+
+commit 9cba4da30e911f55db0e8cd17d4b27dd418812d2
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Fri Mar 24 00:13:27 2017 -0400
+
+    minor css changes
+
+commit 9eea6bceda204cfe0e9076ef45a8a43c0017555b
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Fri Mar 24 00:03:43 2017 -0400
+
+    Updated to do page css
+
+commit fa2ae663865ed28a20c4b074536117c98aa9909b
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Thu Mar 23 23:11:16 2017 -0400
+
+    Updated login page css
+
+commit 3e059f35299ff1f4befecd101645adf847504f79
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Thu Mar 23 23:01:13 2017 -0400
+
+    Updated homepage css
+
+commit dcffd184841fb883d5ceee2f7dc969cac850f39c
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Thu Mar 23 22:41:25 2017 -0400
+
+    Fixed settings page css
+
+commit fb30247be13bacc6ab1b14f87f7aa301fd11b2e5
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Thu Mar 23 22:19:09 2017 -0400
+
+    Began styling stats page
+
+commit a936ca3c22ec402cb534ad45f68cba391d74cce7
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Mar 23 21:27:03 2017 -0400
+
+    graphing works
+
+commit 31ce1c7a9ba94948d7d0297f0265a517ebab6a6c
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Mar 23 20:20:55 2017 -0400
+
+    initial commit
+
+commit fb5cf4d68fe99469e50284f86b3ad0bd171af31f
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Sun Mar 19 20:53:49 2017 -0400
+
+    Enable stressData record and happinessData record
+
+commit 90e4bd607bc49903d99ec07556280c306442057a
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Tue Mar 14 17:38:35 2017 -0400
+
+    Menu intergration with Pomodoro
+
+commit 86b407a449dc2b9f2795e4b69c6b4bf8fda2c8b1
+Merge: ff7a64d4 2428f69f
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Mar 14 02:31:37 2017 -0400
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit ff7a64d447fca8a08f084c77a46c9d01279d32a3
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Mar 14 02:31:23 2017 -0400
+
+    added template page for stats
+
+commit 2428f69f233b54384de37d05fb5fffdc07bafcba
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Mon Mar 13 23:35:23 2017 -0400
+
+    Database APIs connected to visualization for Bill and Ila
+
+commit 2eb9a5ba6c958bf9c7d70bb675e384859b87e7d0
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Sun Mar 12 22:00:46 2017 -0400
+
+    fixing known bug of login username undefined by using callbacks on index page
+
+commit 04c67e0bad9e99050a6da9f6a941313937aad6e7
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Sun Mar 12 21:31:55 2017 -0400
+
+    remove unecessary files
+
+commit 0d297941096792975baa909c56fea8f416be594d
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Sun Mar 12 21:31:11 2017 -0400
+
+    add settingController.js to git
+
+commit 768e6b58bda6a5a63b5affab422923a9707479a1
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Sun Mar 12 21:22:43 2017 -0400
+
+    Sync database with Google Login API
+    
+    Still working on the undefined bug
+
+commit 33ff2ffc0fcfa5445818d146e386490c2b819e03
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Sun Mar 12 03:50:19 2017 -0400
+
+    Use session to replace multiple Google API Calls
+    
+    Known bug: user can click "continue" on log in page before Google API
+    responds, causing the session to load improperly.
+
+commit a49ab9bff0a89459fd284abe8baa7a141fb93095
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Sun Mar 12 00:53:46 2017 -0500
+
+    streamline settingController code and integrate userController with home page
+
+commit 8089e31eb9847556e50362c77765f95a42ba0f75
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Sat Mar 11 23:21:11 2017 -0500
+
+    integrate user sessions with settings
+
+commit 66ef68ad947f391edac94784083476377f5dc3b5
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Mar 3 22:14:01 2017 -0500
+
+    Adding navigation bar for individual pages
+
+commit b996f0db99ebe397d33984069de3e44791c5aef8
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Mar 3 00:01:05 2017 -0500
+
+    Adding userDB APIs for Joy
+
+commit d909153dab8d82a8e100be40f5e10f1ab19c5438
+Merge: 90584894 0ade88a2
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Mar 2 22:36:11 2017 -0500
+
+    Merging settings in order to fix the css
+
+commit 90584894a68975a1ff406b0752aa94c3d96209c7
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Feb 23 22:39:31 2017 -0500
+
+    break function added
+
+commit 2e5c9c69e8caada24a218dedcac0ce6bdc1a321d
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Feb 24 09:51:06 2017 -0500
+
+    added somethings into settings
+
+commit 0ade88a22ee2e0533ec0aac635ae8778be15eb2b
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Feb 23 22:57:29 2017 -0500
+
+    compact totodo and login minor bug fix
+
+commit c60c0b10dfa2da29d76befc72662cd1994f4ccea
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Feb 23 22:46:55 2017 -0500
+
+    Fixing css
+
+commit 3ae5fcaa4c14a760b2377b001a31a93ffbec2b55
+Merge: e2e567ef 9c7393a9
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Feb 23 22:31:51 2017 -0500
+
+    Merge settings and login
+
+commit e2e567ef0abb8800dcbd594cea703e4fc7b4205a
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Feb 23 22:19:15 2017 -0500
+
+    Merge settings and login
+
+commit 9c7393a976a6892bbeec3f74ee86173c0e811d58
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 22:12:27 2017 -0500
+
+    store user_profile in database
+
+commit 8ff24dd54cc2413d9bcaa05fc51cd4f22c2cc19d
+Merge: 3bbeed5b e64dbab5
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Feb 23 22:11:34 2017 -0500
+
+    Merging settings and login
+
+commit 3bbeed5b994e24f358876563d20e808a508820aa
+Merge: cb5ce355 7bca184c
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Feb 23 22:08:33 2017 -0500
+
+    Merging settings and master
+
+commit 7bca184ce567976029da621bdaae42aa36258440
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Thu Feb 23 21:43:44 2017 -0500
+
+    Whole settings function with success message with hard coded username
+
+commit e64dbab5ed6484ec5542f075c2b64a055aca6842
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 21:13:43 2017 -0500
+
+    listening on both ports 8080 and 8000
+
+commit 0cc8754e5a8564d33421df5ac101395062857bf7
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 21:12:32 2017 -0500
+
+    removed a line from server.js
+
+commit e65604ac6f0d0c99f5061243f81576ae649a5229
+Merge: 253582ce a60f0ca4
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 20:51:09 2017 -0500
+
+    Merge branch 'master' of https://github.com/cis-upenn/350S17-4-LifeStats
+
+commit 253582ce173d1cf69c72e205b1c52f86e2488c67
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 20:50:50 2017 -0500
+
+    redeleted file and changed server.js
+
+commit a60f0ca42775118973092e86a0d5b9cf77fc9ce9
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 20:37:38 2017 -0500
+
+    Update userController.js
+
+commit 1684564e05e786c2fd1ff33a184bfd8f05d545de
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 20:36:39 2017 -0500
+
+    Update userController.js
+
+commit 3c81cf1de735ff47562bf33ec8f757d8dec1d439
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 20:32:51 2017 -0500
+
+    recovered deleted file
+
+commit e71e0f3d57048390408edb49678ccb852135dc6f
+Merge: cb5ce355 e88f8346
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 20:28:48 2017 -0500
+
+    Merge pull request #1 from cis-upenn/login
+    
+    Login
+
+commit e88f834666caca62c16bd5f35e7c6b15ca4315e1
+Merge: 196cf9ec cb5ce355
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 20:19:00 2017 -0500
+
+    resolved some merge conflicts
+
+commit 196cf9ec9a1b5c9ed16fec02ff9f352b2a227a76
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 23 20:02:32 2017 -0500
+
+    login finished
+
+commit cb5ce3559a89cc783f9bab3b07e41cd685e5abf5
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Wed Feb 22 14:58:10 2017 -0500
+
+    pruned all unused node modules
+
+commit 1431580a6e815fc81d8029b977c0aa9e5a77a8a4
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Wed Feb 22 11:20:00 2017 -0500
+
+    deleted ng-audio
+
+commit b051345a8391e7439d564f52580481bd3926154f
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Wed Feb 22 11:02:57 2017 -0500
+
+    sound effect and redirect to todo page
+
+commit a9f4bd43645ced97e07d36ecf1f1129470a653d2
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Feb 22 10:46:46 2017 -0500
+
+    updated css styles for settings
+
+commit 533c33d2c1c83deb493fa267514d7e92517e086a
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Feb 22 10:43:37 2017 -0500
+
+    added css stylings to settings page
+
+commit 4ac5ef418f03a29689b9e1a0a5bc3c577be5bc51
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Feb 22 09:37:48 2017 -0500
+
+    refactored homepage css
+
+commit 455be39133966006a0d2e723485fb9aaa70b25f3
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Wed Feb 22 08:45:14 2017 -0500
+
+    consolidate with TodoDB
+
+commit 4f36f1dd297fabc8e16a6cf70994430d49a3efc1
+Merge: d49f5f5d 1a11f517
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Feb 22 01:22:38 2017 -0500
+
+    updated css for login and homepage
+
+commit d49f5f5da8fa9d6a93c6765f37df0b80c68d9b83
+Author: ilakumar <ilakkumar@Ilas-MacBook-Air.local>
+Date:   Wed Feb 22 00:54:02 2017 -0500
+
+    added CSS stylings to the login page and the homepage
+
+commit 0b73e02e32ec07c6e8b35af931b7adc58d516e7e
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Tue Feb 21 23:42:41 2017 -0500
+
+    bring back todo
+
+commit a2c917eb78b3aa31d710df2fbaec08b1b57d1625
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Tue Feb 21 23:41:24 2017 -0500
+
+    consolidate PomodoroDB to TodoDB
+
+commit 1a11f5170dc747d5aa1c928d40afaba6a42aa0cf
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Feb 21 21:59:31 2017 -0500
+
+    added one more file
+
+commit 3fd4b8ee4ed578674c375772b77150aeb4a86531
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Tue Feb 21 21:59:09 2017 -0500
+
+    buggy version
+
+commit d61af9ddc1a4872d1047ecae712f86fe672f39a6
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Mon Feb 20 09:49:54 2017 -0500
+
+    server and model updated
+
+commit 59139c0b1d21bd0b7f8e3b80ed986dc644a146f4
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Sun Feb 19 23:41:45 2017 -0500
+
+    pomodoro tab created
+
+commit 76713d417f9d063b68b5405b51b86677ba1d4016
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Feb 19 13:03:34 2017 -0500
+
+    added image of person
+
+commit 8db751b782a30a99d62e58d624b1ddec9103401d
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sun Feb 19 12:47:36 2017 -0500
+
+    quickstart template deleted
+
+commit f4babe4fe1421f28687db7d4ca05fa56f06375bb
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sat Feb 18 22:41:00 2017 -0500
+
+    created homepage, linked up quite a few things. TODO: add user profile to Mongo
+
+commit 5df34a1423c30e5c9c359d02a111a3e289d63b16
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Sat Feb 18 17:50:01 2017 -0500
+
+    checkout with google login
+
+commit 1c38ea2a96d85d5b4ec67b02bcc047b3a9d8f337
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Fri Feb 17 17:48:10 2017 -0500
+
+    creating update
+
+commit 53f8215b166441efdb0541df9a46b1a284f140b7
+Merge: e622df55 9820364c
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Feb 17 10:53:57 2017 -0500
+
+    rm ds_store
+
+commit e622df559f2f85f53f7432de1419ed7b4894d00d
+Author: Ila Krishna Kumar <ilakkumar@hnt_ve600_0342.wireless-pennnet.upenn.edu>
+Date:   Fri Feb 17 10:48:21 2017 -0500
+
+    added login page mockup
+
+commit 9820364cc45f8a261a31dc848e3f490af645b30d
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Feb 17 10:44:47 2017 -0500
+
+    Name change for todoController
+
+commit ad637b5b8c98b58c81505d6e954fbbdb8c926e48
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Fri Feb 17 10:32:37 2017 -0500
+
+    Delete .DS_Store
+
+commit f5ce3fe34d41676f6ff04d06f4cfa572f4726429
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Fri Feb 17 10:32:18 2017 -0500
+
+    Delete .DS_Store
+
+commit 74224cf62fcf237fc2a20b8d845af2274eb83d96
+Author: Ila Krishna Kumar <ilakkumar@hnt_ve600_0342.wireless-pennnet.upenn.edu>
+Date:   Fri Feb 17 10:27:59 2017 -0500
+
+    added mockups
+
+commit a00aa74a19cdf444acf931f42b5eca781a3bc9ab
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Feb 17 02:05:44 2017 -0500
+
+    Cleanup and adding tag function, ready for week 1 checkin
+
+commit 12c87ca795cd58e5413650affd91f38acde8c0b3
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Feb 17 01:58:11 2017 -0500
+
+    Popup window for user to rank productivity
+
+commit 014f324e70dd31ef33b39b29bab0c96dae5698c1
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Fri Feb 17 00:52:21 2017 -0500
+
+    Editing todo items with a modal popup window. Need to update so that exit works.
+
+commit 2a94946fa2690a0a05e6830f0042b5cbfb1be3db
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Thu Feb 16 21:00:17 2017 -0500
+
+    add todo page
+
+commit a645192026c680386cc27a766fe13714ff4feb8c
+Author: Lawrence Chan <chanlaw@seas.upenn.edu>
+Date:   Thu Feb 16 20:50:47 2017 -0500
+
+    create todo app
+
+commit b2d2420a5015b50769fbcdbfc6553917079620c3
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Thu Feb 16 18:58:41 2017 -0500
+
+    created log-in page
+
+commit 3e6afb98d92251b9d7f16be6d1e3dacdd6a6d45c
+Author: joyqiaoyiwang <wangqiaoyi.joy@gmail.com>
+Date:   Thu Feb 16 18:51:47 2017 -0500
+
+    pomodoro module created
+
+commit fa23c1c7ce6de5fada9f7581613794d5c2204d99
+Merge: 7105523d 99f70f6b
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:50:30 2017 -0500
+
+    merge conflicts
+
+commit 7105523d59e074023011c379499bbea3e8f9d6fe
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:49:26 2017 -0500
+
+    created new mean.io project
+
+commit 99f70f6ba50a50f4d8e792f6663a28c636de1339
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:44:48 2017 -0500
+
+    Update README.md
+
+commit 773b99e7528f19da70aa64533664cd480e0857ef
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:42:18 2017 -0500
+
+    Update README.md
+
+commit 98d5bcae19916d39427bc7f2aa0b6dc0e17c085f
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:40:35 2017 -0500
+
+    Delete .DS_Store
+
+commit b35f1720f6a2239fcd55d8458aca8dda294c8b42
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:39:10 2017 -0500
+
+    mean.io finally
+
+commit 218d721d8ce3eb748a601ac3afcc4b8637c380ac
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:36:50 2017 -0500
+
+    hi
+
+commit 5d0076bbfc86cf04e9eeef3372d17eae2dbe6736
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:35:23 2017 -0500
+
+    created mean.io project
+
+commit 50648a23eab17df02af48108c97af4e04db03eec
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:34:23 2017 -0500
+
+    removed
+
+commit 7127b07845b6fe5c6974828ea23fd3db75ced826
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Wed Feb 15 19:26:15 2017 -0500
+
+    used mean.io tutorial to create mean stack project
+
+commit ccf7b1eea0050d5130d568bae8ad40731f9e07a4
+Author: Summer Yue <yutingyue514@gmail.com>
+Date:   Mon Feb 13 00:42:14 2017 -0500
+
+    Backbone structures for the app and database APIs
+
+commit 531c4c087225bd047cee56eef77edca4e995b78e
+Author: Bill He <billhebillhe@gmail.com>
+Date:   Fri Feb 10 11:49:52 2017 -0500
+
+    first update on README
+
+commit 79c7de74f4b2b6e54e3912c19be48c7b22dcb765
+Author: Julio Reynaga <julioreynaga@users.noreply.github.com>
+Date:   Tue Feb 7 18:15:18 2017 -0500
+
+    Initial commit

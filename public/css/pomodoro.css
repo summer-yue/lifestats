@@ -1,0 +1,180 @@
+/* CSS for public/pomodoro.html */
+
+body.container {
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	max-width: none;
+}
+
+.pomodoroPage {
+	width: 100%;
+	margin: auto;
+	align-self: center;
+}
+
+.pomodoroController {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.pomodoroContainer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#timer1 {
+	align-self: center;
+}
+
+.pomodoro-popup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 6px;
+	position: fixed;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	background: #FFFFFF;
+}
+
+.pomodoro-popup h3 {
+	font-family: Futura-Medium;
+	text-align: center;
+}
+
+.pomodoro-popup .yes {
+	background: #28BE04;
+}
+
+.pomodoro-popup .yes:hover, .pomodoro-popup .yes:focus {
+	background: #209603;
+}
+
+.pomodoroHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	font-size: 32px;
+	color: #FE556A;
+}
+
+.pomodoro.todoContainer {
+	margin-top: 20px;
+	position: fixed;
+	z-index: 1;
+	align-self: center;
+}
+
+.pomodoro.todoContainer .modal-content {
+	border: none;
+	padding: 10px 20px 10px 20px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.pomodoro.todoContainer label {
+	font-weight: normal;
+}
+
+.timerContainer {
+	align-self: center;
+	margin-left: 36px;
+}
+
+.pomodoroPrompt {
+	font-size: 20px;
+	font-family: Futura-Medium;
+	margin: 0px;
+}
+
+.inputTimeContainer {
+	display: flex;
+	width: 100%;
+	margin-bottom: 7px;
+}
+
+.inputTime {
+	margin-right: 30px;
+}
+
+input {
+	width: 80px;
+}
+
+.pomodoroPrompt.time {
+	font-size: 50px;
+	margin-bottom: 15px;
+	margin-left: -15px;
+}
+
+button.btn {
+	background: #FE556A;
+	border: none;
+	color: #FFFFFF;
+}
+
+button.btn.btn-default.pomodoro-completeTask, button.btn.pomodoro-pause {
+	background-color: #FE556A;
+}
+
+button.btn:hover, button.btn:focus {
+	background: #fe1b35;
+	color: #E7E7E7;
+}
+
+button.btn.pomodoro-start {
+	background: #28BE04;
+}
+
+button.btn.pomodoro-start:hover, button.btn.pomodoro-start:focus {
+	background: #209603;
+}
+
+button.btn.pomodoro-complete {
+	background: #FFA2B7;
+	color: #4A4A4A;
+}
+
+button.btn.pomodoro-complete:hover, button.btn.pomodoro-complete:focus {
+	background: #FF889D;
+}
+
+button.btn.pomodoro-reset {
+	background: #FFFFFF;
+	color: #4A4A4A;
+}
+
+button.btn.pomodoro-reset:hover, button.btn.pomodoro-reset:focus {
+	background: #CCCCCC;
+}
+
+.navbtn.pomodoro {
+	background: #FE556A;
+	box-shadow: 0 2px 4px 0 #979797;
+}
+
+.sidenav .navbtn.pomodoro a:hover, .offcanvas a:focus{
+	color: #4A4A4A;
+}
+
+.btn.pomodoro-completeTask {
+	margin-top: 5px;
+}
+
+.ratingsProd .filled {
+	color: #FFD21D;
+}
+
+.ratingsHappy .filled {
+	color: #FE556A;
+}
+
+.ratingsStress .filled {
+	color: #3691FC;
+}
+
+.btn.pomodoro-completeTask {
+	margin-top: 5px;
+}

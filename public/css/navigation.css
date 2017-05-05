@@ -1,0 +1,148 @@
+/* CSS for public/navigation.html */
+
+body {
+    font-family: Futura-Medium;
+    color: #4A4A4A;
+    background: #E7E7E7;
+    display: flex;
+}
+
+#main {
+    transition: margin-left 0s;
+    padding: 16px;
+}
+
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0s;
+    color: #4A4A4A;
+    box-shadow: 0 2px 4px 2px #979797;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #4A4A4A;
+    transition: 0s
+}
+
+.todo a {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.sidenav a:hover {
+    color: #3691FC;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .homepage a:hover, .offcanvas a:focus{
+    color: #3691FC;
+}
+
+.sidenav .pomodoro a:hover, .offcanvas a:focus{
+    color: #FE556A;
+}
+
+.sidenav .stats a:hover, .offcanvas a:focus{
+    color: #28BE04;
+}
+
+.sidenav .settings a:hover, .offcanvas a:focus{
+    color: #AA48FF;
+}
+
+.sidenav .todo a:hover, .offcanvas a:focus{
+    color: #FFD21D;
+}
+
+.sidenavheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    height: 100px;
+}
+
+.sidenavheader .closebtn {
+    font-size: 32px;
+    padding-left: 30px;
+}
+
+.navbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+    height: 50px;
+}
+
+.navbtn.homepage {
+    border-top: 1px solid #979797;
+    border-right: 10px solid #3691FC;
+}
+
+.navbtn.pomodoro {
+    border-right: 10px solid #FE556A;
+}
+
+.navbtn.stats {
+    border-right: 10px solid #28BE04;
+}
+
+.navbtn.settings {
+    border-right: 10px solid #9012FE;
+}
+
+.navbtn.todo {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(100% - 300px);
+    border-right: 10px solid #FFD21D;
+}
+
+iframe {
+    border: none;
+    width: 240px;
+    height: 400px;
+    border-top: 1px solid #979797;
+}
+
+.compactTodoContainer h2 {
+    font-family: Futura-Medium;
+    font-size: 16px;
+    color: #4A4A4A;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.checkbox.ng-scope {
+    font-family: Futura-Medium;
+    color: #4A4A4A;
+    margin-left: 20px;
+}
+
+.todobtnContainer {
+    display: flex;
+    justify-content: center;
+    width: calc(100% + 20px);
+    height: 50px;
+    z-index: 1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

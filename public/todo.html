@@ -1,0 +1,141 @@
+<!-- ../todo: view for the todo tab for the app -->
+
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="css/todo.css">
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regular Todo</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <!-- load angular-->
+    <script src="app.js"></script>
+    <script src="js/todoController.js"></script>
+    <script src="js/notifController.js"></script>
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <div ng-include="'navigation.html'"></div>
+    <div class="container" ng-controller="todoController">
+        <!-- TITLE AND TODO COUNT -->
+        <div notif></div>
+        <div class="settingheader">
+            <h1>To Do's for <span id="welcome_username"> </span>
+                <span class="label label-info">{{ todos.length }}</span></h1>
+        </div>
+        <!-- The Edit Modal -->
+            <div ng-show="idForModal" style="position: fixed;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span ng-click="hideModal()" class="close">&times;</span>
+                        <h3>Edit your todo item:</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p> Text:
+                            <input type="text" placeholder="{{currentTodo.text}}" ng-model="currentTodo.text"> 
+                        </p>
+                        <p> Select Tags:</p>
+                        <select class="tagSelector" name="multipleSelect" id="multipleSelect" ng-model="currentTodo.tags" multiple>
+                            <option ng-repeat="tagOption in alltags" value="{{tagOption}}">{{tagOption}}</option>
+                        </select>
+                        <br>
+                        <button type="submit" class="btn btn-success" ng-click="editTodo()">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Tag Modal -->
+            <div ng-show="idForTagModal" style="position: fixed;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Add Tags to your Todo:</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p> Select Tags:</p>
+                        <select class="tagSelector" name="multipleSelect" id="multipleSelect" ng-model="currentTodo.tags" multiple>
+                            <option ng-repeat="tagOption in alltags" value="{{tagOption}}">{{tagOption}}</option>
+                        </select>
+                        <br>
+                        <button type="submit" class="btn btn-success" ng-click="addTag()">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Popup after a ToDo is completed -->
+            <div ng-show="showPopup" style="position: fixed;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--  <span ng-click = "hidePopup()" class="close">&times;</span> -->
+                        <h3>How productive were you at {{lastTodo.text}}? </h3>
+                    </div>
+                    <div class="modal-body">
+                        <p class="hoursPrompt"> How many hours did it take:
+                            <input type="number" ng-model="lastTodo.hours"> </p>
+
+                        <p class="rankingPrompt"> Please rank your productivity from 1 to 5: </p>
+                        <span ng-repeat="rating in ratingsProd" class="ratingsProd">
+                            <div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="setProductivity(rating)"></div>
+                        </span>
+
+                        <p class="rankingPrompt"> How happy did you feel: </p>
+                        <span ng-repeat="rating in ratingsHappy" class="ratingsHappy">
+                            <div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="setHappiness(rating)"></div>
+                        </span>
+                        
+                        <p class="rankingPrompt"> How stressed did you feel: </p>
+                        <span ng-repeat="rating in ratingsStress" class="ratingsStress">
+                            <div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="setStress(rating)"></div>
+                        </span>
+                            
+                        <button type="submit" class="btn btn-success" ng-click="recordPopup()">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- TODO LIST -->
+        <div id="todo-list">
+            <div>
+                <div class="checkbox" ng-repeat="todo in todos">
+                    <input class="checkbox box" type="checkbox" ng-click="deleteTodo(todo._id)">
+                    <label ng-attr-id="{{ 'todoText-' + todo._id}}" ng-click="showModal(todo._id)"> {{ todo.text }}
+                    </label>
+                    <div class="labelContainer">
+                        <div class="todoLabel" ng-repeat="tag in todo.tags"> {{tag}} </div>
+                    </div>
+
+                    <div class="addTags">
+                        <button class="addTags btn" type="button" ng-show="(todo.tags.length == 0)" ng-click="showTagModal(todo._id)">Add tags!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORM TO CREATE TODOS -->
+            <div id="todo-form">
+                <div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Next, I am going to..." ng-model="addFormData.text">
+                        </div>
+                        <button type="submit" class="btn btn-success" ng-click="createTodo()" >Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="display: none">
+            <div class="md-dialog-container" id="myDialog">
+                <md-dialog layout-padding>
+                    <h2>Pre-Rendered Dialog</h2>
+                </md-dialog>
+            </div>
+        </div>
+</body>
+
+<script>
+document.getElementById("welcome_username").innerHTML = JSON.parse(localStorage.getItem("currentUser")).username;
+</script>
+
+</html>

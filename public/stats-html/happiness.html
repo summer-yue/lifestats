@@ -1,0 +1,81 @@
+<!-- specific html for the happiness page under the stats tab -->
+
+<!doctype html>
+
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Happiness</title>
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/stats.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="app.js"></script>
+  <script src="js/statsController.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+  </script>
+
+</head>
+
+<body>
+
+  <!-- TITLE AND TODO COUNT -->
+  <div class="statsMenu" ng-include="'navigation.html'"></div>
+  <div class="statsBody">
+
+    <div>
+      <h1>Happiness Tracking for <span id="welcome_username"> </span> </h1>
+    </div>
+
+    <div class="statsOptions" id="options" align="center">
+      <a href="/stress">Stress</a><br>
+      <a href="/stats">All Stats</a><br>
+      <a href="/productivity">Productivity</a><br>
+    </div>
+
+    <div class="timeFrameContainer">
+      <div class="timeFrame">
+        <div align="center" ng-controller="statsController" ng-init="load()"> What time frame do you want to display?
+          <br>
+          <br>
+          Start date
+          <!-- edit start date to be the date that they joined -->
+          <input type="date" id="start" ng-model="startDate.value"><br><br>
+          End date
+
+          <!-- edit the end date to be today -->
+          <input type="date" id="end" ng-model="endDate.value"><br><br>
+
+          <button class="btn" type="submit" ng-click="displayHappy()">Display</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="avgContainer">
+      <div class="avg" id="avgHappiness"></div>
+    </div>
+
+    <div class="statsGraph" ng-controller="statsController" id="chart">
+
+    </div>
+
+  </div>
+
+
+
+</body>
+
+<!-- 
+  TODO: need to figure out how to integrate this with Angular -->
+  <script>
+    document.getElementById("welcome_username").innerHTML = JSON.parse(localStorage.getItem("currentUser")).username;
+  </script>
+
+  </html>

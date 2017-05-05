@@ -1,0 +1,89 @@
+/* CSS for public/settings.html */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+}
+
+#navModule {
+	width: 200px;
+}
+
+.settingContainer {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	height: 100%;
+	background: #FFFFFF;
+	padding-left: 100px;
+	padding-right: 100px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.settingheader {
+	height: 100px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 20px;
+}
+
+.settingheader span {
+	font-family: Futura-Medium;
+	font-size: 32px;
+	color: #9012FE;
+}
+
+div.checkbox {
+	font-family: Futura-Medium;
+	font-size: 18px;
+	color: #4A4A4A;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.checkbox label {
+	margin-left: 10px;
+}
+
+.frequencyq {
+	font-family: Futura-Medium;
+	font-size: 18px;
+	color: #4A4A4A;
+	margin-bottom: 20px;
+}
+
+select {
+	width: 200px;
+}
+
+button.btn {
+	background: #9012FE;
+	border: none;
+}
+
+button.btn.settings-submit {
+	width: 120px;
+}
+
+button.btn:hover, button.btn:focus {
+	background: #7700E5;
+	color: #E7E7E7;
+}
+
+.settings-updateAlert {
+	font-weight: normal;
+	color: #4A4A4A;
+}
+
+.navbtn.settings {
+    background: #9012FE;
+    box-shadow: 0 2px 4px 0 #979797;
+}
+
+.sidenav .navbtn.settings a:hover, .offcanvas a:focus{
+    color: #4A4A4A;
+}

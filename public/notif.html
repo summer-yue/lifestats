@@ -1,0 +1,28 @@
+<!-- specific html for our popup notifications -->
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/notif.css">
+</head>
+
+<div class = notifContainer ng-show="showNotif" ng-controller="notifController">
+	<div ng-show="ifNotif" class="notif modal-content">
+		<div class ="notif-ratingContainer" ng-show = "ifTrackHappiness">
+			<p> Please rank your happiness from 1 to 5:</p>
+
+			<span ng-repeat="rating in ratingsHappy" class="ratingsHappy">
+	            <div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="setHappiness(rating)"></div>
+	        </span>
+        </div>
+
+		<div class="notif-ratingContainer" ng-show="ifTrackStress">
+			<p> Please rank your stress from 1 to 5:</p>
+
+			<span ng-repeat="rating in ratingsStress" class="ratingsStress">
+				<div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="setStress(rating)"></div>
+			</span>
+		</div>
+
+		<button type="submit" class="btn btn-success notif-submit" ng-click="recordNotif()">Submit</button>
+	</div>
+</div>

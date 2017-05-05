@@ -1,0 +1,34 @@
+<!-- ../compactTodo: view for the compactTodo part of navigation inserted into the navigation bar -->
+
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="css/navigation.css">
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regular Todo</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script> -->
+    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <!-- load angular -->
+    <script src="app.js"></script>
+    <script src="js/todoController.js"></script>
+</head>
+
+<body ng-controller="todoController">
+    <div class="compactTodoContainer">
+        <h2> TOP 5 TO DO ITEMS </h2>
+        <!-- CONPACT TODO LIST with 5 items-->
+        <div id="todo-list">
+            <div>
+                <div class="checkbox" ng-repeat="todo in todos | limitTo:5 | orderBy:'createdTime':true">
+                    <h> {{ todo.text }} </h>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

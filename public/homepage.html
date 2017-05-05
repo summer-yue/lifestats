@@ -1,0 +1,62 @@
+<!-- specific html for our homepage tab -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LifeStats</title>
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <!-- load angular -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="app.js"></script>
+    <script src="js/statsController.js"></script>
+    <script src="js/notifController.js"></script>
+    <script type="text/javascript">
+    google.charts.load("current", {
+        packages: ["corechart"]
+    });
+    </script>
+    <script src="https://apis.google.com/js/plus.js?onload=init"></script>
+    <!-- load gapi -->
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="homepageMenu" ng-include="'navigation.html'"></div>
+    <div class="homepageBody">
+        <div notif></div>
+        <div class="homepage" id="userModule" align="center">
+            <span id="welcome_user"> Welcome, </span>
+            <span id="welcome_username"> </span>
+        </div>
+        <div align="center" ng-controller="statsController">
+            <div class="avgContainer">
+                <div class="avg" id="avgHappiness"></div>
+                <div class="avg" id="avgProductivity"></div>
+                <div class="avg" id="avgStress"></div>
+            </div>
+            <div class="statsGraph" id="chart" data-ng-init="displayAll()">
+            </div>
+        </div>
+    </div>
+    <script>
+    function openNav() {
+        document.getElementById("menu_button").style.display = "none";
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("menu_button").style.display = "block";
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+    document.getElementById("welcome_username").innerHTML = JSON.parse(localStorage.getItem("currentUser")).username;
+    </script>
+</body>
+
+</html>

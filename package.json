@@ -1,0 +1,29 @@
+{
+  "name": "lifestats",
+  "version": "0.0.1",
+  "description": "350 project by team JS.LIB, a web app using the MEAN stack tracking and analyzing productivity, stress and happiness. We implemented a Pomodoro Todo list as well as nice visualizations to help you tracking your days.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cis-upenn/350S17-4-LifeStats.git"
+  },
+  "keywords": [
+    "lifestats;pomodoro;cis350"
+  ],
+  "author": "Bill, Joy, Summer, Ila and Lawrence",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cis-upenn/350S17-4-LifeStats/issues"
+  },
+  "homepage": "https://github.com/cis-upenn/350S17-4-LifeStats#readme",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "method-override": "^2.1.3",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.1.1"
+  }
+}

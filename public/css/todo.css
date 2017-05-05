@@ -1,0 +1,163 @@
+/* CSS for public/todo.html */
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	height: 100%;
+}
+
+#navModule {
+	width: 200px;
+}
+
+.todobtnContainer {
+	box-shadow: 0 2px 4px 0 #979797;
+    background: #FFD21D;
+}
+
+.sidenav .navbtn.todo a:hover, .offcanvas a:focus{
+    color: #4A4A4A;
+}
+
+.container.ng-scope {
+	margin: auto;
+	height: 100%;
+	background: #FFFFFF;
+	padding-left: 100px;
+	padding-right: 100px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.container.ng-scope div h1{
+	font-family: Futura-Medium;
+	font-size: 32px;
+}
+
+.settingheader {
+	height: 100px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 10px;
+	color: #FFD21D;
+}
+
+div.checkbox.ng-scope {
+	display: flex;
+	font-family: Futura-Medium;
+	font-size: 18px;
+	color: #4A4A4A;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+
+button.btn {
+	background: #FFD21D;
+	border: none;
+	color: white;
+}
+
+button.btn:hover, button.btn:focus {
+	background: #ffcc00;
+	color: #E7E7E7;
+}
+
+.label.label-info.ng-binding {
+	background-color: #FFD21D;
+}
+
+.modal-header {
+	text-align: center;
+}
+
+.modal-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modal-body p {
+	text-align: center;
+}
+
+.rankingPrompt {
+	margin-bottom: 0;
+}
+
+.hoursPrompt {
+	margin-bottom: 20px;
+}
+
+.modal-header h3 {
+	font-family: Futura-Medium;
+}
+
+.form-group {
+	margin-top: 15px;
+}
+
+.labelContainer {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%
+}
+
+.checkbox.box {
+	margin-right: 5px;
+    align-self: center;
+}
+
+.todoLabel {
+	display: flex;
+	align-items: center;
+	background: #FFFFB6;
+	border-radius: 4px;
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.tagSelector {
+	width: 100px;
+}
+
+.rating {
+        color: #a9a9a9;
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-shadow: .03em .03em rgba(0,0,0,0.50);
+    }
+    ul.rating {
+        display: inline-block;
+    }
+    .rating li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 1px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .ratingsProd .filled {
+        color: #FFD21D;
+    }
+
+    .ratingsHappy .filled {
+        color: #FE556A;
+    }
+
+    .ratingsStress .filled {
+        color: #3691FC;
+    }
+}

@@ -1,0 +1,58 @@
+<!-- specific html for the main stats tab -->
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regular Todo</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stats.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script> -->
+    <!-- load angular -->
+    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="app.js"></script>
+    <script src="js/statsController.js"></script>
+    <script src="js/notifController.js"></script>
+    <script type="text/javascript">
+    google.charts.load("current", {
+        packages: ["corechart"]
+    });
+    </script>
+    <script src="https://apis.google.com/js/plus.js?onload=init"></script>
+</head>
+
+<body>
+    <!-- TITLE AND TODO COUNT -->
+    <div class="statsMenu" ng-include="'navigation.html'"></div>
+    <div class="statsBody">
+        <div notif></div>
+        <h1>Overall statistics for <span id="welcome_username"> </span> </h1>
+        <div class="statsOptions" id="options" align="center">
+            <a href="/stress">Stress</a>
+            <br>
+            <a href="/happiness">Happiness</a>
+            <br>
+            <a href="/productivity">Productivity</a>
+            <br>
+        </div>
+        <div class="avgContainer">
+            <div class="avg" id="avgHappiness"></div>
+            <div class="avg" id="avgProductivity"></div>
+            <div class="avg" id="avgStress"></div>
+        </div>
+        <div class="statsGraph" ng-controller="statsController" id="chart" data-ng-init="displayAll()">
+        </div>
+        
+    </div>
+</body>
+<!-- 
+  TODO: need to figure out how to integrate this with Angular -->
+<script>
+  document.getElementById("welcome_username").innerHTML = JSON.parse(localStorage.getItem("currentUser")).username;
+</script>
+
+</html>

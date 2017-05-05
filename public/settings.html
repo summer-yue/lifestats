@@ -1,0 +1,73 @@
+<!-- ../settings: view for the settings tab for the app -->
+
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="css/settings.css">
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Settings</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- load jquery -->
+    <!--     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+
+ -->
+    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <!-- load angular -->
+    <script src="app.js"></script>
+    <script src="js/settingController.js"></script>
+    <script src="js/notifController.js"></script>
+</head>
+
+<body>
+    <div ng-include="'navigation.html'"></div>
+    <div id="userModule" class="settingContainer" ng-controller="settingController">
+        <div notif></div>
+        <div class="settingheader">
+            <span>Settings</span>
+        </div>
+        <!-- <div id="loginModule" ng-controller="mainUserController"> -->
+        <input type="text" ng-model="currentUser.username">
+        <!-- Select what you would want to track,  including happiness, stress, Pomodoro ToDo list and regular productivity tracking -->
+        <div class="checkbox">
+            <label>
+                Happiness
+                <input type="checkbox" value="Happiness checking" ng-model="currentUser.trackHappiness">
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                Stress
+                <input type="checkbox" value="Stress checking" ng-model="currentUser.trackStress">
+            </label>
+        </div>
+        <div class="checkbox" style="display: none;">
+            <label>
+                Pomodoro
+                <input type="checkbox" value="Pomodoro checking" ng-model="currentUser.trackPomodoro">
+            </label>
+        </div>
+        <div class="checkbox" style="display: none;">
+            <label>
+                Regular Todo List
+                <input type="checkbox" value="Regular Todo checking" ng-model="currentUser.trackTodo">
+            </label>
+        </div>
+        <!-- Select how frequently user would want popups to show up -->
+        <div class="frequencyq">How often would you like us to track your stats? </div>
+        <select name="frequency" ng-model="currentUser.popupFrequency">
+            <option value="1">Every hour</option>
+            <option value="2">Every 2 hours</option>
+            <option value="4">Every 4 hours</option>
+        </select>
+        <br/>
+        <br/>
+        <button type="submit" class="btn btn-success settings-submit" ng-click="submitSettings()">Save Changes</button>
+        <strong class="settings-updateAlert" ng-show="showSuccessAlert"> {{successTextAlert}} </strong>
+    </div>
+</body>
+
+</html>

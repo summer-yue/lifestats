@@ -1,0 +1,66 @@
+<!-- specific html for our login page -->
+
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="mainUserController">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+
+  <title>Welcome to LifeStats</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+
+  <script src="https://apis.google.com/js/plus.js?onload=init"></script> <!-- load gapi -->
+
+</head>
+
+<body>
+  <div class="login">
+  <div class="loginlogo">LIFESTATS</div>
+  <header class="login-header">
+    <span class="text">LOGIN</span>
+  </header>
+
+  <div align="center" style="display:{{displayLoginButton}}">
+    <span id="googleSignIn">
+        <span id="signInButton">
+        </span>
+    </span>
+  </div>
+
+ <img ng-src="{{userImg}}" alt="Mountain View" style="width:96px; height:96px; display:{{displayUser}}; margin-left:auto; margin-right:auto;">
+
+  <form>
+    <div type="text" align="center" style="margin-top:10px; display:{{displayUser}}">Continue as {{userName}}
+      <button id="advance_button" class="button" align="center" onclick="location.href='/home'"><span>ADVANCE</span></button>
+    </div> 
+    <button id="logout_button" class="button" style="vertical-align:middle;margin-left:auto;
+    margin-right:auto;display:{{displayUser}};background-color:red" align="center" ng-click="logout()"><span>LOG OUT</span></button>
+  </form>
+</div>
+
+</body>
+
+  <script>
+
+    var googleAuth = function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/client:plusone.js';
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(po, s);
+        console.log("callShowButton");
+    }
+
+    googleAuth();
+    
+  </script>
+
+  <!-- load controller -->
+  <script src="app.js"></script>
+  <script src="js/userController.js"></script> <!-- controller has to load after google auth finishes -->
+</html>
+

@@ -1,0 +1,113 @@
+/* CSS for public/stats-html */
+
+body {
+	display: flex;
+}
+
+#chart {
+	align-items: center;
+}
+
+.statsBody h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Futura-Medium;
+	width: 100%;
+	height: 100px;
+	margin: 0px;
+	text-align: center;
+	color: #28BE04;
+	font-size: 32px;
+}
+
+.statsBody h1 #welcome_username {
+	margin-left: 10px;
+}
+
+.statsBody {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.statsOptions {
+	display: flex;
+	justify-content: center;
+}
+
+.statsOptions a {
+	font-size: 18px;
+	margin: 0px 20px 50px 20px;
+	color: #28BE04;
+}
+
+.statsOptions a:hover {
+	color: #209603;
+}
+
+.timeFrameContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.timeFrameContainer.prod {
+	margin-top: 100px;
+}
+
+.timeFrame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 200px;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	border-radius: 6px;
+}
+
+.avgContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.avg {
+	margin: 50px 20px 0px 20px;
+}
+
+.statsGraph {
+	align-self: center;
+}
+
+button.btn {
+	background: #28BE04;
+	border: none;
+	color: #FFFFFF;
+}
+
+button.btn:hover, button.btn:focus {
+	background: #209603;
+	color: #E7E7E7;
+}
+
+#donutchart {
+	align-self: center;
+}
+
+.navbtn.stats {
+    background: #28BE04;
+    box-shadow: 0 2px 4px 0 #979797;
+}
+
+.sidenav .navbtn.stats a:hover, .offcanvas a:focus{
+    color: #4A4A4A;
+}
+
+#taskCompletion {
+	text-align: center;
+}
+
+#smileyFace {
+	display: flex;
+    justify-content: center;
+}
